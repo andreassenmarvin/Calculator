@@ -120,5 +120,23 @@ numbersEl.forEach( number => {
     }
     // console.log(e.key)
   })
+
+  function clickButtonEl(key) {
+    numbersEl.forEach(button => {
+      if (button.innerText === key) {
+        button.click();
+      }
+    })
+  }
+  function clickOperation(key){
+    operationEl.forEach( operation => {
+      if(operation.innerText === key){
+        operation.click()
+      }
+    })
+  }
+  function clickEqual(){
+    equalEl.click();
+  }
   
   
