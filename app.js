@@ -23,3 +23,20 @@ numbersEl.forEach( number => {
       display2El.innerText = dis2Num;
     })
   })
+
+  operationEl.forEach( operation => {
+    operation.addEventListener('click', (e)=> {
+      if (!dis2Num) return;
+      haveDot = false;
+      const operationName = e.target.innerText;
+      if (dis1Num && dis2Num && lastOperation){
+        mathOperation();
+  
+      }else{
+        result = parseFloat(dis2Num);
+      }
+      clearVar(operationName);
+      lastOperation = operationName;
+      console.log(result)
+    })
+  });
