@@ -62,4 +62,16 @@ numbersEl.forEach( number => {
       result = parseFloat(result) % parseFloat(dis2Num);
     }
   }
+
+  equalEl.addEventListener('click', ()=> {
+    if (!dis2Num || !dis1Num) return;
+    haveDot = false;
+    mathOperation();
+    clearVar();
+    display2El.innerText = result;
+    tempResultEl.innerText = '';
+    dis2Num = result;
+    dis1Num = '';
+  })
+  
   
