@@ -40,3 +40,12 @@ numbersEl.forEach( number => {
       console.log(result)
     })
   });
+
+  function clearVar(name = ''){
+    dis1Num += dis2Num + ' ' + name + ' ';
+    display1El.innerText = dis1Num;
+    display2El.innerText = '';
+    dis2Num = '';
+    tempResultEl.innerText = result;
+  }
+  
