@@ -48,4 +48,18 @@ numbersEl.forEach( number => {
     dis2Num = '';
     tempResultEl.innerText = result;
   }
+
+  function mathOperation() {
+    if (lastOperation === 'x') {
+      result = parseFloat(result) * parseFloat(dis2Num);
+    } else if (lastOperation === '+') {
+      result = parseFloat(result) + parseFloat(dis2Num);
+    } else if (lastOperation === '-') {
+      result = parseFloat(result) - parseFloat(dis2Num);
+    } else if (lastOperation === '/') {
+      result = parseFloat(result) / parseFloat(dis2Num);
+    }else if( lastOperation === '%'){
+      result = parseFloat(result) % parseFloat(dis2Num);
+    }
+  }
   
